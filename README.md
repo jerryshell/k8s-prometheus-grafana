@@ -10,7 +10,7 @@ cd k8s-prometheus-grafana
 ```
 
 ```bash
-kubectl apply -f kube-prometheus/setup
+kubectl create -f kube-prometheus/setup
 ```
 
 <details>
