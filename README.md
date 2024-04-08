@@ -10,7 +10,7 @@ cd k8s-prometheus-grafana
 ```
 
 ```bash
-kubectl create -f kube-prometheus/setup
+kubectl apply -f kube-prometheus/setup
 ```
 
 <details>
@@ -34,7 +34,7 @@ namespace/monitoring created
 </details>
 
 ```bash
-kubectl create -f kube-prometheus/
+kubectl apply -f kube-prometheus/
 ```
 
 ## Remove
