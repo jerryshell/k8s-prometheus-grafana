@@ -35,10 +35,10 @@ spec:
           ports:
             - containerPort: 19115
               name: http
-          # resources:
-          #   limits:
-          #     cpu: 20m
-          #     memory: 40Mi
+          resources:
+            limits:
+              cpu: 20m
+              memory: 40Mi
           #   requests:
           #     cpu: 10m
           #     memory: 20Mi
@@ -59,10 +59,10 @@ spec:
             - --volume-dir=/etc/blackbox_exporter/
           image: jimmidyson/configmap-reload:v0.5.0
           name: module-configmap-reloader
-          # resources:
-          #   limits:
-          #     cpu: 20m
-          #     memory: 40Mi
+          resources:
+            limits:
+              cpu: 20m
+              memory: 40Mi
           #   requests:
           #     cpu: 10m
           #     memory: 20Mi
@@ -89,10 +89,10 @@ spec:
           ports:
             - containerPort: 9115
               name: https
-          # resources:
-          #   limits:
-          #     cpu: 20m
-          #     memory: 40Mi
+          resources:
+            limits:
+              cpu: 20m
+              memory: 40Mi
           #   requests:
           #     cpu: 10m
           #     memory: 20Mi

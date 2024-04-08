@@ -58,10 +58,10 @@ spec:
               port: https
               scheme: HTTPS
             periodSeconds: 5
-          # resources:
-          #   limits:
-          #     cpu: 250m
-          #     memory: 180Mi
+          resources:
+            limits:
+              cpu: 250m
+              memory: 180Mi
           #   requests:
           #     cpu: 102m
           #     memory: 180Mi

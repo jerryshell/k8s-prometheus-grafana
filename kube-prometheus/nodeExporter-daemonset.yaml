@@ -39,10 +39,10 @@ spec:
             - --collector.netdev.device-exclude=^(veth.*|[a-f0-9]{15})$
           image: quay.io/prometheus/node-exporter:v1.7.0
           name: node-exporter
-          # resources:
-          #   limits:
-          #     cpu: 250m
-          #     memory: 180Mi
+          resources:
+            limits:
+              cpu: 250m
+              memory: 180Mi
           #   requests:
           #     cpu: 102m
           #     memory: 180Mi
@@ -78,10 +78,10 @@ spec:
             - containerPort: 9100
               hostPort: 9100
               name: https
-          # resources:
-          #   limits:
-          #     cpu: 20m
-          #     memory: 40Mi
+          resources:
+            limits:
+              cpu: 20m
+              memory: 40Mi
           #   requests:
           #     cpu: 10m
           #     memory: 20Mi

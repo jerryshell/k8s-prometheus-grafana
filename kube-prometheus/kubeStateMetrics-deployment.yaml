@@ -34,10 +34,10 @@ spec:
             - --telemetry-port=8082
           image: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.11.0
           name: kube-state-metrics
-          # resources:
-          #   limits:
-          #     cpu: 100m
-          #     memory: 250Mi
+          resources:
+            limits:
+              cpu: 100m
+              memory: 250Mi
           #   requests:
           #     cpu: 10m
           #     memory: 190Mi
@@ -60,10 +60,10 @@ spec:
           ports:
             - containerPort: 8443
               name: https-main
-          # resources:
-          #   limits:
-          #     cpu: 40m
-          #     memory: 40Mi
+          resources:
+            limits:
+              cpu: 40m
+              memory: 40Mi
           #   requests:
           #     cpu: 20m
           #     memory: 20Mi
@@ -87,10 +87,10 @@ spec:
           ports:
             - containerPort: 9443
               name: https-self
-          # resources:
-          #   limits:
-          #     cpu: 20m
-          #     memory: 40Mi
+          resources:
+            limits:
+              cpu: 20m
+              memory: 40Mi
           #   requests:
           #     cpu: 10m
           #     memory: 20Mi
